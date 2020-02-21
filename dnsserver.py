@@ -33,3 +33,5 @@ while True:
         return_code=1
     response_numbers=struct.pack("iiiii",2,return_code,client_data_numbers[2],client_data_numbers[3], len(answer))
     serverSocket.sendto(response_numbers+response_string, address)
+
+    
