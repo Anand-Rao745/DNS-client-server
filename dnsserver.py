@@ -9,9 +9,9 @@ import struct
 
 serverIP = sys.argv[1]
 serverPort = int(sys.argv[2])
-
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 serverSocket.bind((serverIP, serverPort))
+
 inputfile=open("dns-master.txt")
 temp=inputfile.readlines()
 resource_records=[]
