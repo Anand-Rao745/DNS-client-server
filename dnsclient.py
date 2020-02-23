@@ -10,9 +10,9 @@ import random
 serverIP = sys.argv[1]
 serverPort = int(sys.argv[2])
 hostname=sys.argv[3]
-
 clientsocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 clientsocket.settimeout(1)
+
 temp=str(hostname)+" A IN"
 message_ID=random.randint(1,100)
 numbers=struct.pack("iiiii", 1,0,message_ID,len(temp),0)
