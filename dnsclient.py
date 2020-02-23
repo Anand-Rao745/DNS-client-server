@@ -52,7 +52,7 @@ while i<3:
         if i<2:
             print("Request timed out...")
         else:  
-            print("Request timed out ... Exiting Program.")
+            print("Request timed out... Exiting Program.")
             sys.exit(1)
         i+=1
 
